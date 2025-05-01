@@ -1,0 +1,136 @@
+/* Responsive */
+@media (max-width: 770px) {
+    #main-head {
+      flex-direction: column;
+      text-align: center;
+      padding: 10px;
+    }
+  
+    .leftside-head {
+        align-self: center;
+      margin-left: 20px;
+    }
+  
+    .nav-tabs {
+        position: static;
+        transform: none;
+
+      flex-direction: column;
+      gap: 15px;
+      margin: 10px;
+    }
+    
+  
+    #intro-sec {
+      flex-direction: column;
+      
+      align-items: center;
+    }
+  
+    .intro-text {
+      margin-bottom: 30px;
+      
+    }
+    
+  
+    #lap-icon {
+      margin-top: 20px;
+    }
+  
+    #lap-icon img {
+      width: 200px;
+      height: 200px;
+
+    }
+    #service-containers{
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      
+    }
+    .service-boxes{
+      text-align: center;
+      
+      flex-wrap: wrap;
+      width: 100%;
+      position: relative;
+    
+    }
+
+    /* Skill section */
+    #my-skills{
+      
+      flex-direction: column;
+      text-align: center;
+    }
+    .skill-box1 , 
+    .skill-box2{
+      flex-direction: column;
+      
+  }
+  #self-intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+  }
+  #self-intro h3{
+    margin: 0 0 12px 0;
+    text-align: center;
+  }
+  #self-intro p{
+    margin: 0;
+    opacity: 0.6;
+    text-align: center;
+  }
+  #download-cv-button{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #my-portfolios{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .portfolio-boxes{
+    text-align: center;
+   
+  }
+  .portfolio-boxes h3{
+    margin-top: -21px;
+  }
+
+  /* Enquiry section */
+
+  .enquiry-contact-box{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .contact-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .contact-form form{
+    width: 90%;
+    
+  }
+  .contact-form form input, textarea{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  #submit-details{
+    display: flex;
+    justify-self: center;
+    width: 100%;
+   
+  }
+  }
+  

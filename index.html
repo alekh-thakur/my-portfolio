@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio - Alekh</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Forum&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+  </head>
+  <body>
+    <div id="welcome-screen">
+      <h1 id="welcome-text"></h1>
+    </div>
+    <div id="main-content"><header id="main-head">
+      <div class="leftside-head">Portfolio</div>
+      <ul class="nav-tabs">
+        <li class="set-tabs" id="home"><a href="#intro-sec">Home</a></li>
+        <li class="set-tabs" id="service"><a href="#services">Service</a></li>
+        <li class="set-tabs" id="about"><a href="#my-skills">About</a></li>
+        <li class="set-tabs" id="portfolio"><a href="#my-portfolios">Portfolio</a></li>
+        <li class="set-tabs" id="contact"><a href="#enquiry-sec">Contact</a></li>
+      </ul>
+    </header>
+    <section id="intro-sec">
+      <div id="intro-text">
+        <div data-aos="fade-right"  data-aos-duration="900" class="intro-lines" id="hello">
+          Hello! I am
+        </div>
+        <div data-aos="fade-right"  data-aos-duration="900" class="intro-lines" id="name">
+          Alekh
+        </div>
+        <div data-aos="fade-right"  data-aos-duration="900" class="intro-lines" id="basic-intro">
+          I'm a web developer passionate about building responsive and user-friendly websites. <br>
+          I also specialize in crafting powerful AI prompts.
+        </div>
+      </div>
+
+      <div id="lap-icon">
+        <img src="images/coding.png" alt="" />
+      </div>
+
+    </section>
+    <section id="services">
+      <h3 id="services-head">My expertise</h3>
+      <div id="service-containers">
+        <div data-aos="fade-up" data-aos-duration="900" class="service-boxes" id="service-1">
+          <img src="images/box1a.png" alt="" />
+          <h4>Web development</h4>
+          <p>I build responsive and modern websites using HTML, CSS and
+            JavaScript. My goal is to create clean, user-friendly interfaces
+            that work seamlessly across all devices.
+          </p>
+        </div>
+        <div class="service-boxes" data-aos="fade-up" data-aos-duration="900" id="service-2">
+          <img src="images/box2.png" alt="" />
+          <h4>AI Prompt Engineering</h4>
+          <p>I create powerful AI prompts that generate creative and context-aware 
+          outputs. I not only generate just text, but high quality code using 
+          AI tools like ChatGPT, Claude and many more. 
+          I make AI work like a coding assistant </p>
+        </div>
+      </div>
+    </section>
+    <section id="my-skills">
+      <div class="skill-box1" data-aos="fade-right" data-aos-duration="900">
+        <div class="skills-row1">
+          <img class="img-html-css" src="images/htmlcss.png" alt="">
+          <h4 class="skills-title">HTML & CSS</h4>
+        </div>
+        <div class="skills-row1">
+          <img src="images/js.png" alt="" class="img-html-css">
+          <h4 class="skills-title">JavaScript</h4>
+        </div>
+      </div>
+      <div class="skill-box2" data-aos="fade-right" data-aos-duration="900">
+        <div class="skills-row2">
+          <img src="images/science.png" alt="" class="img-html-css">
+          <h4 class="skills-title">ReactJS</h4>
+        </div>
+        <div class="skills-row2">
+          <img src="images/ai.png" alt="" class="img-html-css">
+          <h4 class="skills-title">AI Prompting</h4>
+        </div>
+      </div>
+      <div id="self-intro" data-aos="fade-left" data-aos-duration="900">
+        <h3>My Skills</h3>
+        <p>I am a self-driven and devoted frontend developer who has a solid base in HTML, CSS, and JavaScript. I am adept at designing responsive and interactive interfaces that deliver effortless experiences on multiple devices. <br>I am significantly interested in learning backend technologies and their application to fuel contemporary web applications. <br> I am also investigating AI prompting and utilizing AI tools to streamline workflows and maximize development processes. My aim is to continue adding to my skill set .</p>
+        <button id="download-cv-button"><a href="php12.pdf" target="_blank">Download CV</a></button>
+      </div>
+      
+    </section>
+    <section id="my-portfolios">
+      <h4 style="color: blue; letter-spacing: 3px; font-weight: 600;">Creative work</h4>
+      <h1 class="section-title">Check my portfolio</h1>
+      <div id="portfolio-containers" data-aos="fade-up" data-aos-duration="900">
+        <div class="portfolio-boxes">
+          <img src="images/t5.jpg" class="potrait-img" alt="">
+          <h3>Weather App</h3>
+          <p>A real-time weather app using HTML, CSS and JavaScript. It fetches data using OpenWeather API</p>
+          <div class="portfolio-links">
+            <a href="https://github.com/alekh-thakur/Weather-tracker.git" target="_blank">Github</a>
+            <br>
+            <a href=" https://alekh-thakur.github.io/Weather-tracker/" target="_blank">Live Demo</a>
+          </div>
+        </div>
+        <div class="portfolio-boxes">
+          <img src="images/t3.jpg" class="potrait-img" alt="">
+          <h3>Music Player</h3>
+          <p>A basic music player designed using HTML, CSS & JavaScript</p>
+          <div class="portfolio-links">
+            <a href="https://github.com/alekh-thakur/Code_Alpha_project_MusicPlayer.git" target="_blank">Github</a>
+            <br>
+            <a href="https://alekh-thakur.github.io/Code_Alpha_project_MusicPlayer/" target="_blank">Live Demo</a>
+          </div>
+        </div>
+        <div class="portfolio-boxes">
+          <img src="images/t2.jpg" class="landscape-img" alt="">
+          <h3>Gym Website</h3>
+          <p>Simple Gym Website designed using HTML, CSS with a clean responsive layout.</p>
+          <div class="portfolio-links">
+            <a href="https://github.com/alekh-thakur/Gym-Website.git" target="_blank">Github</a>
+            <br>
+            <a href="https://alekh-thakur.github.io/Gym-Website" target="_blank">Live Demo</a>
+          </div>
+        </div>
+        
+      </div>
+      <div id="portfolio-containers" data-aos="fade-up" data-aos-duration="900">
+        <div class="portfolio-boxes">
+          <img src="images/t6.jpg" class="potrait-img" alt="">
+          <h3>Foregin Exchange</h3>
+          <p>This is a simple Foreign Exchange web app built using HTML, CSS, and JavaScript. It allows users to convert currencies using real-time exchange rates. </p>
+          <div class="portfolio-links">
+            <a href="https://github.com/alekh-thakur/Foregin-excahnge.git" target="_blank">Github</a>
+            <br>
+            <a href="https://alekh-thakur.github.io/Foregin-excahnge/" target="_blank">Live Demo</a>
+          </div>
+        </div>
+        <div class="portfolio-boxes">
+          <img src="images/t4.jpg" class="potrait-img" alt="">
+          <h3>Calculator</h3>
+          <p>A basic Calculator build using HTML, CSS and JavaScript. It can perform all kinds of operations with a user-friendly design.</p>
+          <div class="portfolio-links">
+            <a href="https://github.com/alekh-thakur/Code_Alpha_project_MusicPlayer.git" target="_blank">Github</a>
+            <br>
+            <a href="https://alekh-thakur.github.io/CodeAlpha_project_Calculator" target="_blank">Live Demo</a>
+          </div>
+        </div>
+        <div class="portfolio-boxes">
+          <img src="images/t7.png" class="landscape-img" alt="">
+          <h3>Gym Website</h3>
+          <p>It is a basic Key-Detector using HTML, CSS and JavaScript. I returns the key pressed, the KeyCode and Code</p>
+          <div class="portfolio-links">
+            <a href="https://github.com/alekh-thakur/Keyboard-key-detector.git" target="_blank">Github</a>
+            <br>
+            <a href="https://alekh-thakur.github.io/Keyboard-key-detector/" target="_blank">Live Demo</a>
+          </div>
+        </div>
+        
+      </div>
+      
+    </section>
+
+    <section id="enquiry-sec">
+      <h4 style="color: blue; letter-spacing: 3px; font-weight: 600;">Get in touch</h4>
+      <h1 class="section-title">Any questions? Feel free to contact</h1>
+      <div class="enquiry-contact-box">
+        <div class="contact-details" data-aos="fade-right" data-aos-duration="900">
+          <div class="contacts">
+            <img src="images/location.png" alt="">
+            <p>Dehradun, India</p>
+          </div>
+          <div class="contacts">           
+            <p><a href="https://www.linkedin.com/in/code-alekh22" target="_blank">
+              <img src="images/linkedin.png" alt=""> 
+              LinkedIn</a></p>
+          </div>
+          <div class="contacts">
+            <img src="images/email.png" alt="">
+            <p>codewithalekh@gmail.com</p>
+          </div>
+          <div class="contacts">
+            <img src="images/phone.png" alt="">
+            <p>+91-80572-91899</p>
+          </div>
+        </div>
+
+        <div class="contact-form" data-aos="fade-left" data-aos-duration="900">
+          <form action="https://formsubmit.co/codewithalekh@gmail.com" method="post" target="_blank">
+            <input type="text" name="Name" placeholder="Name">
+            <input type="text" name="Email" placeholder="Email">
+            <input type="text" name="Number" placeholder="Mobile No.">
+            <textarea name="Message" id="" placeholder="Message"></textarea>
+            <input type="submit" value="Submit" id="submit-details">
+          </form>
+        </div>
+      </div>
+    </section></div>
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+      const text = "Welcome to My Portfolio!";
+  let index = 0;
+
+  function typeWriter() {
+    if (index < text.length) {
+      document.getElementById("welcome-text").innerHTML += text.charAt(index);
+      index++;
+      setTimeout(typeWriter, 100);
+    }
+  }
+
+  window.addEventListener("load", () => {
+    typeWriter();
+    setTimeout(() => {
+      document.getElementById("main-content").style.display = "block";
+    }, 3000); 
+  });
+    </script>
+  </body>
+</html>
