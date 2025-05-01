@@ -18,28 +18,7 @@ section {
   max-width: 100%;
   overflow-x: hidden;
 }
-#welcome-screen {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #111;
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 2rem;
-  z-index: 9999;
-  animation: fadeOut 2s ease-in-out forwards;
-  animation-delay: 1.5s;
-}
-@keyframes fadeOut {
-  to {
-    opacity: 0;
-    visibility: hidden;
-  }
-}
+
 
 
 /* Header styles */
@@ -455,3 +434,5 @@ section {
   transform: translateY(-13px);
   background-color: #8d21eb;
 }
+
+

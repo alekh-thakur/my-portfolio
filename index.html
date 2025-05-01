@@ -16,10 +16,8 @@
 
   </head>
   <body>
-    <div id="welcome-screen">
-      <h1 id="welcome-text"></h1>
-    </div>
-    <div id="main-content"><header id="main-head">
+   
+    <header id="main-head">
       <div class="leftside-head">Portfolio</div>
       <ul class="nav-tabs">
         <li class="set-tabs" id="home"><a href="#intro-sec">Home</a></li>
@@ -194,7 +192,7 @@
         </div>
 
         <div class="contact-form" data-aos="fade-left" data-aos-duration="900">
-          <form action="https://formsubmit.co/codewithalekh@gmail.com" method="post" target="_blank">
+          <form action="https://formsubmit.co/codewithalekh@gmail.com" method="post" >
             <input type="text" name="Name" placeholder="Name">
             <input type="text" name="Email" placeholder="Email">
             <input type="text" name="Number" placeholder="Mobile No.">
@@ -202,29 +200,15 @@
             <input type="submit" value="Submit" id="submit-details">
           </form>
         </div>
+        
       </div>
-    </section></div>
+    </section>
     
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
-      const text = "Welcome to My Portfolio!";
-  let index = 0;
-
-  function typeWriter() {
-    if (index < text.length) {
-      document.getElementById("welcome-text").innerHTML += text.charAt(index);
-      index++;
-      setTimeout(typeWriter, 100);
-    }
-  }
-
-  window.addEventListener("load", () => {
-    typeWriter();
-    setTimeout(() => {
-      document.getElementById("main-content").style.display = "block";
-    }, 3000); 
-  });
+   
+  
     </script>
   </body>
 </html>
