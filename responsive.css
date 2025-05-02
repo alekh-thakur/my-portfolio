@@ -132,5 +132,12 @@
     width: 100%;
    
   }
+
+  .footer-navigation{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
   }
   

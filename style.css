@@ -2,7 +2,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Noto Sans", sans-serif;
+  font-family: "Forum", serif;
+  font-weight: 550;
+  font-style: normal;
 }
 
 html,
@@ -19,7 +21,10 @@ section {
   overflow-x: hidden;
 }
 
-
+#main-content{
+  flex: 1;
+  overflow: hidden;
+}
 
 /* Header styles */
 #main-head {
@@ -132,6 +137,7 @@ section {
 /* Service section */
 #services {
   background-color: #fff;
+  overflow-y: hidden;
 }
 #service-containers {
   display: flex;
@@ -140,18 +146,29 @@ section {
   justify-content: space-evenly;
   gap: 20px;
   padding: 34px;
+  overflow-y: hidden;
+  box-sizing: border-box;
 }
 .service-boxes {
   flex: 1;
   align-items: center;
-
+  min-width: 0;
   padding: 20px;
+  overflow-x: hidden;
 
   /* border: 2px solid black; */
   text-align: center;
 }
 
+.service-boxes img{
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  
+}
 #services-head {
+  width: 100%;
   text-align: center;
   margin-top: 25px;
   letter-spacing: 5px;
@@ -160,36 +177,32 @@ section {
   font-size: 1.4rem;
 }
 #service-1 img {
-  margin-left: -42px;
   height: 190px;
+  
 }
 #service-1 h4 {
   font-size: 1.1rem;
   font-weight: 600;
-  margin: -11px 0 4px -8px;
+  margin: -11px 0 4px 22px;
   color: #8d21eb;
 }
 #service-2 h4 {
   font-size: 1.1rem;
   font-weight: 600;
-  margin: 11px -2px 8px 0;
+  margin: 11px 0 0 0;
   color: #8d21eb;
 }
 
 #service-2 img {
   height: 165px;
 }
-#service-1 p {
+#service-1 p, #service-2 p {
   margin-top: 7px;
   opacity: 0.6;
   letter-spacing: 0.7px;
   font-size: 0.8rem;
 }
-#service-2 p {
-  opacity: 0.6;
-  letter-spacing: 0.7px;
-  font-size: 0.8rem;
-}
+
 
 /* Skills section */
 #my-skills {
@@ -365,7 +378,7 @@ section {
 /* Enquiry section */
 
 #enquiry-sec{
-  background-color: #bb66fc17;
+  background-color: #f3f3f3;
   padding: 70px 20px;
   display: flex;
   flex-wrap: wrap;
@@ -436,3 +449,46 @@ section {
 }
 
 
+/* Down navigation */
+#down-navigation{
+  background-color: #1d1d5a;
+  padding: 60px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  
+}
+
+#footer-title{
+  color: #fff;
+ text-align: center;
+ letter-spacing: 2px;
+}
+
+.footer-navigation{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 18px 10px;
+  margin-bottom: -30px;}
+
+.footer-navigation a{
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  
+}
+.footer-navigation a:hover{
+  color: #fca61f;
+  transition: all 0.5s ease-in;
+}
+
+#portfolio-footer{
+  text-align: center;
+  background-color: #1d1d5a;
+  
+  padding: 10px ;
+
+  color: #fff;
+  font-size: 0.9rem;;
+}
