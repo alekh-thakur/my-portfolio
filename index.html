@@ -4,26 +4,38 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal Portfolio - Alekh</title>
-    <link rel="stylesheet" href="https://alekh-thakur.github.io/my-portfolio/style.css" />
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="responsive.css">
     <link href="https://fonts.googleapis.com/css2?family=Forum&family=Handlee&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Patrick+Hand&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
 
-    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="icon" type="image/png" href="images/fav.jpg">
 
   </head>
-  <body>
-   <div id="main-content"><header id="main-head">
+  <body >
+   <div id="main-content">
+    <header id="main-head">
     <div class="leftside-head">Portfolio</div>
+    
     <ul class="nav-tabs">
+     
       <li class="set-tabs" id="home"><a href="#intro-sec">Home</a></li>
       <li class="set-tabs" id="service"><a href="#services">Service</a></li>
       <li class="set-tabs" id="about"><a href="#my-skills">About</a></li>
       <li class="set-tabs" id="portfolio"><a href="#my-portfolios">Portfolio</a></li>
       <li class="set-tabs" id="contact"><a href="#enquiry-sec">Contact</a></li>
     </ul>
+    <button class="toggle-btn" onclick="toggleSidebar()"><i class="fa-solid fa-bars"></i></button>
+    <div id="sidebar" class="mobile-sidebar">
+      <a href="#intro-sec">Home</a>
+      <a href="#services">Service</a>
+      <a href="#my-skills">About</a>
+      <a href="#my-portfolios">Portfolio</a>
+      <a href="#enquiry-sec">Contact</a>
+    </div>
   </header>
+</div>
   <section id="intro-sec">
     <div id="intro-text">
       <div data-aos="fade-right"  data-aos-duration="900" class="intro-lines" id="hello">
@@ -39,7 +51,7 @@
     </div>
 
     <div id="lap-icon">
-      <img src="images/coding.png" alt="" />
+      <img src="images/DP.jpg" alt="" />
     </div>
 
   </section>
@@ -87,15 +99,26 @@
     </div>
     <div id="self-intro" data-aos="fade-left" data-aos-duration="900">
       <h3>My Skills</h3>
-      <p>I am a self-driven and devoted frontend developer who has a solid base in HTML, CSS, and JavaScript. I am adept at designing responsive and interactive interfaces that deliver effortless experiences on multiple devices. <br>I am significantly interested in learning backend technologies and their application to fuel contemporary web applications. <br> I am also investigating AI prompting and utilizing AI tools to streamline workflows and maximize development processes. My aim is to continue adding to my skill set .</p>
-      <button id="download-cv-button"><a href="php12.pdf" target="_blank">Download CV</a></button>
+      <p>I am a self-driven and devoted frontend developer who has a solid base in HTML, CSS, and JavaScript. I am adept at designing responsive and interactive interfaces that deliver effortless experiences on multiple devices. <br>I am significantly interested in learning backend technologies and their application to fuel contemporary web applications. <br> I am also investigating AI prompting and utilizing AI tools to streamline workflows and maximize development processes. My aim is to continue adding to my skill set.</p>
+      <button id="download-cv-button"><a href="" target="_blank">Download CV</a></button>
     </div>
     
   </section>
   <section id="my-portfolios">
     <h4 style="color: #8d21eb; letter-spacing: 4px; font-weight: 600;">Creative work</h4>
     <h1 class="section-title">Check my portfolio</h1>
+    
     <div id="portfolio-containers">
+      <div class="portfolio-boxes"  data-aos="fade-up" data-aos-duration="900">
+        <img src="images/t10.png"  class="potrait-img" alt="">
+        <h3>AAGMAN</h3>
+        <p>Aagman is a smart healthcare app that lets users search doctors, view live queues, and book appointments instantly. Hospitals and doctors get their own dashboards to manage patients and schedules smoothly.
+</p>
+        <div class="portfolio-links">
+            <h4 style="font-weight: 600;">Under Development</h4>
+            
+        </div>
+      </div>
       <div class="portfolio-boxes"  data-aos="fade-up" data-aos-duration="900">
         <img src="images/t5.jpg" class="potrait-img" alt="">
         <h3>Weather App</h3>
@@ -106,62 +129,21 @@
           <a href=" https://alekh-thakur.github.io/Weather-tracker/" target="_blank">Live Demo</a>
         </div>
       </div>
-      <div class="portfolio-boxes"  data-aos="fade-up" data-aos-duration="900">
-        <img src="images/t3.jpg" class="potrait-img" alt="">
-        <h3>Music Player</h3>
-        <p>A basic music player designed using HTML, CSS & JavaScript</p>
-        <div class="portfolio-links">
-          <a href="https://github.com/alekh-thakur/Code_Alpha_project_MusicPlayer.git" target="_blank">Github</a>
-          <br>
-          <a href="https://alekh-thakur.github.io/Code_Alpha_project_MusicPlayer/" target="_blank">Live Demo</a>
-        </div>
-      </div>
-      <div class="portfolio-boxes"  data-aos="fade-up" data-aos-duration="900">
-        <img src="images/t2.jpg" class="landscape-img" alt="">
-        <h3>Gym Website</h3>
-        <p>Simple Gym Website designed using HTML, CSS with a clean responsive layout.</p>
-        <div class="portfolio-links">
-          <a href="https://github.com/alekh-thakur/Gym-Website.git" target="_blank">Github</a>
-          <br>
-          <a href="https://alekh-thakur.github.io/Gym-Website" target="_blank">Live Demo</a>
-        </div>
-      </div>
       
-    </div>
-    <div id="portfolio-containers" >
       <div class="portfolio-boxes" data-aos="fade-up" data-aos-duration="900">
-        <img src="images/t6.jpg" class="potrait-img" alt="">
-        <h3>Foregin Exchange</h3>
-        <p>This is a simple Foreign Exchange web app built using HTML, CSS, and JavaScript. It allows users to convert currencies using real-time exchange rates. </p>
-        <div class="portfolio-links">
-          <a href="https://github.com/alekh-thakur/Foregin-excahnge.git" target="_blank">Github</a>
-          <br>
-          <a href="https://alekh-thakur.github.io/Foregin-excahnge/" target="_blank">Live Demo</a>
-        </div>
-      </div>
-      <div class="portfolio-boxes" data-aos="fade-up" data-aos-duration="900">
-        <img src="images/t4.jpg" class="potrait-img" alt="">
+        <img src="images/calc.jpg" class="potrait-img" alt="">
         <h3>Calculator</h3>
         <p>A basic Calculator build using HTML, CSS and JavaScript. It can perform all kinds of operations with a user-friendly design.</p>
         <div class="portfolio-links">
-          <a href="https://github.com/alekh-thakur/Code_Alpha_project_MusicPlayer.git" target="_blank">Github</a>
+          <a href="https://github.com/alekh-thakur/INTERNPE-TASK1.git" target="_blank">Github</a>
           <br>
-          <a href="https://alekh-thakur.github.io/CodeAlpha_project_Calculator" target="_blank">Live Demo</a>
-        </div>
-      </div>
-      <div class="portfolio-boxes" data-aos="fade-up" data-aos-duration="900">
-        <img src="images/t7.png" class="landscape-img" alt="">
-        <h3>Keyboard-key-detector</h3>
-        <p>It is a basic Key-Detector using HTML, CSS and JavaScript. I returns the key pressed, the KeyCode and Code</p>
-        <div class="portfolio-links">
-          <a href="https://github.com/alekh-thakur/Keyboard-key-detector.git" target="_blank">Github</a>
-          <br>
-          <a href="https://alekh-thakur.github.io/Keyboard-key-detector/" target="_blank">Live Demo</a>
+          <a href="https://alekh-thakur.github.io/INTERNPE-TASK1/" target="_blank">Live Demo</a>
         </div>
       </div>
       
     </div>
     
+    <button onclick="window.location.href='project.html'" id="projectBtn">See more projects<i class="fa-solid fa-arrow-right"></i></button>
   </section>
 
   <section id="enquiry-sec">
@@ -219,8 +201,13 @@
       AOS.init();
       const year  = document.querySelector("#year");
       year.innerText = new Date().getFullYear();
-      
-     
+
+      function toggleSidebar() {
+  document.getElementById("sidebar").classList.toggle("active");
+ 
+}
+
+
     </script>
   </body>
 </html>

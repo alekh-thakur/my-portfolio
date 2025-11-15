@@ -8,6 +8,8 @@
  
 }
 
+
+
 html,
 body {
   min-height: 100vh;
@@ -80,6 +82,22 @@ section {
   width: 100%;
 }
 
+#theme-mode {
+  cursor: pointer;
+  margin-left: 470px;
+  
+}
+
+#theme-mode img {
+  width: 24px; 
+  height: 24px;
+  transition: transform 0.3s ease;
+}
+
+.mobile-sidebar, 
+.toggle-btn{
+  display: none;
+}
 /* Hero Section */
 
 #intro-sec {
@@ -123,20 +141,14 @@ section {
 }
 
 #lap-icon img {
+  border: 5px solid black;
+  box-shadow: 0 0 15px 10px rgba(0, 0, 0, 0.25);
   width: 300px;
   height: 300px;
-  animation: floating 4s ease-in-out infinite;
+  object-fit:fill;
+  border-radius: 50%;  
 }
 
-@keyframes floating {
-  0%,
-  100% {
-    transform: translateX(0);
-  }
-  50% {
-    transform: translateX(-15px);
-  }
-}
 
 /* Service section */
 #services {
@@ -277,7 +289,7 @@ section {
 }
 
 #download-cv-button {
-  
+  display: inline-block;
   text-decoration: none;
   margin: 45px 0 0 16px;
   padding: 14px 25px;
@@ -369,20 +381,45 @@ section {
   
   margin-top: 19px;
   text-decoration: none;
-  font-weight: 550;
+  font-weight: 500;
 }
 
 .potrait-img {
   width: 100%;
   aspect-ratio: 4/5;
-  object-fit: contain;
+  object-fit:contain;
 }
+
 .landscape-img {
   width: 100%;
   aspect-ratio: 16/9;
   object-fit: contain;
 }
 
+#projectBtn{
+  margin-top: 25px;
+  
+  border: none;
+  background-color: #fff;
+  font-weight: 600;
+   text-decoration: none;
+ 
+  padding: 14px 25px;
+  border-radius: 21px;
+  background-color: #fca61f;
+  color: white;
+  border: 1px solid #fca61f;
+  transition: transform 0.5s cubic-bezier(0.25, 0.8, 0.25, 1),background-color 0.4s ease;
+}
+#projectBtn i{
+  
+  margin: 0 0 0 4px;
+}
+#projectBtn:hover{
+  cursor: pointer;
+  transform: translateY(-13px);
+  background-color: #8d21eb;
+}
 /* Enquiry section */
 
 #enquiry-sec{
